@@ -1,0 +1,19 @@
+
+spring:
+  application:
+    name: medicaldata
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: postgres
+    password: yourpassword
+    max-connections: 10
+
+
+server.port: ${PORT:9998}
+
+logging:
+  level:
+    org:
+      springframework:
+        web: ERROR
